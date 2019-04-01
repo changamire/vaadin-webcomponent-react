@@ -1,6 +1,6 @@
 # ReactJS with Vaadin web components
 
-A simple application that combines [React](https://reactjs.org/) with [web compnents](https://www.webcomponents.org/) 
+A simple application that combines [React](https://reactjs.org/) with [web components](https://www.webcomponents.org/) 
 from [Vaadin](https://vaadin.com). 
 
 Using the [Star Wars API](https://swapi.co) to provide some sample data via a RESTful web service, this application
