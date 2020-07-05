@@ -30,11 +30,11 @@ class App extends React.Component {
   componentDidMount() {
     this.refs.grid.pageSize = 10; //SWAPI uses default page size of 10
     this.refs.grid.dataProvider = function (params, callback) {
-      let url = 'https://swapi.co/api/people?page=' + (params.page + 1); //SWAPI pages start from 1 not 0
+      let url = 'https://swapi.dev/api/people?page=' + (params.page + 1); //SWAPI pages start from 1 not 0
       if (params.filters.length > 0) {
-        url = 'https://swapi.co/api/people?search=' + (params.filters[0].value);
+        url = 'https://swapi.dev/api/people?search=' + (params.filters[0].value);
       } else {
-        url = 'https://swapi.co/api/people?page=' + (params.page + 1);
+        url = 'https://swapi.dev/api/people?page=' + (params.page + 1);
       }
       axios.get(url)
         .then(res => {
